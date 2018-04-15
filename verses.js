@@ -26,5 +26,9 @@ var verses =
 {
   verse: "Then God blessed the seventh day and made it holy, because on it he rested from all the work of creating that he had done.",
   location: "Genesis 2:3"
+},
+{
+  verse: "But God chose the foolish things of the world to shame the wise; God chose the weak things of the world to shame the strong.",
+  location: "1 Corinthians 1:27"
 }
 ];
