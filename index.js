@@ -1,6 +1,7 @@
 
 
   $('#changeVerse').click((e)=> {
+    console.log("clicked!!!!1");
     let verseIndex, prevIndex;
     const generateRand = () => {
       verseIndex = Math.floor(Math.random() * verses.length );
@@ -16,8 +17,8 @@
     generateRand();
     console.log(verseIndex);
     console.log(verses[verseIndex].verse);
-    $('#message').text(verses[verseIndex].verse);
-    $('#location').text(verses[verseIndex].location);
+    $('#quote').text(verses[verseIndex].verse);
+    $('#author').text(verses[verseIndex].location);
     prevIndex = verseIndex;
 
 

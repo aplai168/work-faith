@@ -1,5 +1,22 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,700';
+@import 'https://fonts.googleapis.com/css?family=Lato:300';
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 3.2em;
+	padding: 0.3em;
+	color: rgba(255,255,255,0.8);
+	margin-top: -1.5em;
+}
+
 body {
-	/*font-family: 'Open Sans', sans-serif;*/
+	font-family: 'Open Sans', sans-serif;
 	background-color: #00897b;
 	width: 100vw;
 	height: 100vh;
@@ -32,4 +49,145 @@ body {
 	0%{background-position:0% 9%}
 	50%{background-position:100% 92%}
 	100%{background-position:0% 9%}
+}
+
+#container {
+	width: 90vw;
+	max-width: 600px;
+	height: auto;
+	min-height: 40vh;
+	background: rgba(238,238,238,0.9);
+	border-radius: 0.5em;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-align-content: center;
+	    -ms-flex-line-pack: center;
+	        align-content: center;
+	position: relative;
+}
+
+#quotesBg {
+	width: 100%;
+	position: absolute;
+	height: 100%;
+	top: 0;
+	bottom: 0;
+	padding: 0 1em;
+	margin-top: -1em;
+	/* Para que el padding no aumente del width */
+	box-sizing: border-box;
+}
+
+
+#quoteContainer {
+	width: 100%;
+	z-index: 3;
+	text-align: center;
+}
+
+#quote {
+	font-size: 1.4em;
+	padding: 1em 2em 0.5em 2em;
+	color: rgba(0,0,0,0.8);
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+}
+
+#buttons {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-justify-content: space-around;
+	    -ms-flex-pack: distribute;
+	        justify-content: space-around;
+	z-index: 5;
+}
+
+button {
+	font-family: 'Open Sans', sans-serif;
+	padding: 0.4em 0.8em;
+	margin: 1em 0;
+	border: none;
+	border-radius: 5px;
+	background: #02A3D6;
+	opacity: 1;
+	cursor: pointer;
+	font-size: 1.1em;
+	letter-spacing: 0.03em;
+	color: #D9E0DE;
+	-webkit-animation: buttonColor 59s linear infinite;
+	        animation: buttonColor 59s linear infinite;
+}
+
+@-webkit-keyframes buttonColor{
+	0% {background: #02A3D6;}
+	6.67% {background: #237DDB;}
+	13.34% {background: #5E35B1;}
+	20.01% {background: #C31D74;}
+	26.68% {background: #ED452A;}
+	33.35% {background: #FC9500;}
+	40.02% {background: #D4C222;}
+	46.67% {background: #5DA944;}
+	53.56% {background: #5DA844;}
+	60.03% {background: #C7C72D;}
+	66.7% {background: #FC9500;}
+	73.37% {background: #EB432B;}
+	80.04% {background: #CC1D6D;}
+	86.71% {background: #6333B0;}
+	93.98% {background: #227EDC;}
+	100% {background: #02A3D6;}
+}
+
+@keyframes buttonColor{
+	0% {background: #02A3D6;}
+	6.67% {background: #237DDB;}
+	13.34% {background: #5E35B1;}
+	20.01% {background: #C31D74;}
+	26.68% {background: #ED452A;}
+	33.35% {background: #FC9500;}
+	40.02% {background: #D4C222;}
+	46.67% {background: #5DA944;}
+	53.56% {background: #5DA844;}
+	60.03% {background: #C7C72D;}
+	66.7% {background: #FC9500;}
+	73.37% {background: #EB432B;}
+	80.04% {background: #CC1D6D;}
+	86.71% {background: #6333B0;}
+	93.98% {background: #227EDC;}
+	100% {background: #02A3D6;}
+}
+
+button:focus {
+	outline: none;
+}
+
+button:hover {
+	opacity: 0.7;
+	transition: 0.2s ease;
+}
+
+body > p {
+	font-family: 'Lato', sans-serif;
+	font-size: 0.9em;
+	letter-spacing: 0.09em;
+	color: #E8E8E8;
+	padding-top: 0.5em;
+}
+
+body > p a {
+	color: #E8E8E8;
+	text-decoration: none;
+}
+
+body > p a:hover {
+	text-decoration: underline;
 }
