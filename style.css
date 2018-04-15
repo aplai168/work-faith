@@ -1,0 +1,35 @@
+body {
+	/*font-family: 'Open Sans', sans-serif;*/
+	background-color: #00897b;
+	width: 100vw;
+	height: 100vh;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	/* Animation */
+	background: linear-gradient(312deg, #00897b, #43a047, #7cb342, #c0ca33, #ffb300, #fb8c00, #f4511e, #e53935, #d81b60, #8e24aa, #5e35b1, #3949ab, #1e88e5, #039be5, #00acc1);
+	background-size: 3000% 3000%;
+	-webkit-animation: AnimationName 59s linear infinite;
+	        animation: AnimationName 59s linear infinite;
+}
+
+@-webkit-keyframes AnimationName {
+	0%{background-position:0% 9%}
+	50%{background-position:100% 92%}
+	100%{background-position:0% 9%}
+}
+
+@keyframes AnimationName {
+	0%{background-position:0% 9%}
+	50%{background-position:100% 92%}
+	100%{background-position:0% 9%}
+}
